@@ -1,0 +1,101 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+#title, #description {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#survey-form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: #003366;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+fieldset {
+  margin-top:10px;
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 3px solid #1b1b32;
+}
+
+fieldset:last-of-type {
+border-bottom: none;
+}
+
+#name-label,#email-label,#number-label,#dropdown-label {
+  display: block;
+  margin: 1rem 0;
+}
+
+#name,#email,#number,#dropdown{
+  margin: 5px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  height:30px;
+  border-radius: 3px;
+}
+
+#comment{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;  
+  border-radius: 3px;
+}
+
+#b1-label,#b2-label,#b3-label,#b4-label{
+  display:block;
+  margin-bottom: 0.5em;
+}
+
+#b1,#b2,#b3,#b4 {  
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+#yes {  
+  width: unset;
+  margin: 0 0.1em 0;
+  vertical-align: middle;
+}
+#no {  
+  width: unset;
+  margin: 0 0 0 1.5em;
+  vertical-align: middle;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: #000;
+  border-radius: 3px;
+  min-width: 300px;
+  color: #fff;
+}
+#submit:hover {
+  color: #fff;
+  border-color: #fff;
+  cursor:pointer;
+}

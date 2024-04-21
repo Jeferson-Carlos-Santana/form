@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 id="title">Educational form</h1>
+    <p id="description">Fill out the educational form and gain experience as a programmer.</p>
+
+    <form id="survey-form">
+ 
+      <label for="name" id="name-label">Name: 
+        <input type="text" id="name" name="name" placeholder="Type your name..." value="" required=""/>
+      </label>
+
+      <label for="email" id="email-label">Email: 
+        <input type="email" id="email" name="email" placeholder="Type your email..." value="" required=""/>
+      </label>      
+
+      <label for="number" id="number-label">Age: 
+        <input type="number" id="number" name="number" min="18" max="120" placeholder="Type your age..." value=""/>
+      </label>   
+
+       <label for="dropdown" id="dropdown-label">Choose the programming language:
+       <select name="dropdown" id="dropdown">
+       <option value="">(select one)</option>
+       <option value="1">PHP</option>
+       <option value="2">CSS</option>
+       <option value="3">JAVASCRIPT</option>
+       </select>
+       </label> 
+       
+       <fieldset>
+       <legend>Do you have any experience with programming?</legend>
+       <label for="yes"><input type="radio" id="yes" name="yes-no" value="yes" checked/> Yes</label>
+        <label for="no"><input type="radio" id="no" name="yes-no" value="no"/> No</label>
+       </fieldset>
+       
+       <fieldset>
+       <legend>Why do you want to program?</legend>
+       <label for="b1" id="b1-label"><input type="checkbox" id="b1" name="b1" value="b1"/>For curiosity.</label>
+       <label for="b2" id="b2-label"><input type="checkbox" id="b2" name="b2" value="b2"/>To work as a programmer.</label>
+       <label for="b3" id="b3-label"><input type="checkbox" id="b3" name="b3" value="b3"/>To develop personal projects.</label>
+       <label for="b4" id="b4-label"><input type="checkbox" id="b4" name="b4" value="b4"/>Others.</label>
+       </fieldset>
+       
+       <fieldset>
+       <legend>Comment in your words why you want to be a programmer:</legend>       
+          <textarea id="comment" name="comment" rows="5" cols="30" placeholder="I like coding on the beach..." value=""></textarea>        
+        </fieldset>
+
+       <button type="submit" id="submit" name="submit" value="sendForm">Submit</button>
+    </form>
+  </body>
+</html>
